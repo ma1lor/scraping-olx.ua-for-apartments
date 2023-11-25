@@ -9,7 +9,7 @@ list = []
 def get_info1():
     
     i = 1
-    while(i<2):
+    while(i<4):
 
         page = f'&page={i}'
         url = f'https://www.olx.ua/uk/nedvizhimost/kvartiry/dolgosrochnaya-arenda-kvartir/kiev/?search%5Bfilter_float_price%3Ato%5D=10000&search%5Bfilter_enum_number_of_rooms_string%5D%5B0%5D=odnokomnatnye&search%5Bfilter_enum_number_of_rooms_string%5D%5B1%5D=dvuhkomnatnye&search%5Bdistrict_id%5D=17&{page}'
