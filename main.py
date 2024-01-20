@@ -20,9 +20,9 @@ def get_info1():
             "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 OPR/89.0.4447.64"
         }
         r = requests.get(url=url, headers=headers)
-        with open(f"page{i}.html", "w") as file:
+        with open(f"templates/page{i}.html", "w") as file:
             file.write(r.text)
-        with open(f"page{i}.html") as file:
+        with open(f"templates/page{i}.html") as file:
                 info = file.read()
 
         soup = BeautifulSoup(info, "lxml")
@@ -43,6 +43,8 @@ def get_info1():
                 'price' : price
             })
         i+=1
+
+
 
 def get_info_description():
 
